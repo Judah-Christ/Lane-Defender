@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 2084917405617498018}
   - component: {fileID: 934647588011696264}
   - component: {fileID: -3360746981768962861}
-  - component: {fileID: -3050659239314189096}
+  - component: {fileID: 7349415697736778342}
+  - component: {fileID: -1254748586843915956}
   m_Layer: 3
   m_Name: slimeBlue_blue
   m_TagString: Enemy
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 01b5cca45a691d34084b060239310983, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -139,7 +140,34 @@ PolygonCollider2D:
       - {x: 0.285, y: 0.049999997}
       - {x: 0.225, y: 0.14999999}
   m_UseDelaunayMesh: 0
---- !u!114 &-3050659239314189096
+--- !u!50 &7349415697736778342
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2721667086868089233}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 6
+--- !u!114 &-1254748586843915956
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -151,3 +179,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e65b9546c2b8f4b479ec426db444a7f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemy: {fileID: 2721667086868089233}
+  move: {x: -2, y: 0}
